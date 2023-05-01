@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>File</li>
+            <li id="home">Home</li>
+            <li>Insert</li>
+            <li>Layout</li>
+            <li>Help</li>
+            
+        </ul>
+    </div>
+    <div class="styling">
+        
+            <i class="fa-regular fa-copy" id="copy"></i>
+            <i class="fa-solid fa-scissors" id="cut"></i>
+            <i class="fa-regular fa-clipboard" id="paste"></i>    
+
+      
+            <select id="fontfamily">
+                <option value="monoSpace">MonoSpace</option>
+                <option value="sans-serif">Sans-serif</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="cursive">Cursive</option>
+              </select>
+    
+       
+            <select id="fontsize">
+                <option value="14px">14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+                <option value="20px">20</option>
+              </select>
+      
+       
+            <i class="fa-solid fa-bold" id="bold-btn"></i>
+            <i class="fa-solid fa-italic" id="italic-btn"></i>
+            <i class="fa-solid fa-underline" id="underline-btn"></i>
+      
+    
+            <i class="fa-solid fa-align-left" id="left"></i>
+            <i class="fa-solid fa-align-center" id="center"></i>
+            <i class="fa-solid fa-align-right" id="right"></i>
+    
+        
+            <label class="material-icons" for="text-color">
+            format_color_text
+            <input type="color" name="text-color" id="text-color" >
+            </label>
+            <label class="material-icons" for="fill-color">
+            format_color_fill
+            <input type="color" name="fill-color" id="fill-color" >
+            </label>
+            
+            <i class="fa-solid fa-cloud-arrow-down" id="download" onclick="downloadJson()"></i>
+            <label class="fa-solid fa-cloud-arrow-up" id="upload">
+            <input type="file" id="upload" accept=".json" >
+            </label>
+    </div>
+    <div class="focusblock">
+        <div id="focus-value"></div>
+        <div></div>
+    </div>
+    <table class="excel-table">
+
+        <thead class="excel-thead">
+
+            <tr class="excel-columns">
+                <th id="cell-id">
+
+                </th>
+            </tr>
+
+        </thead>
+
+      <tbody id="excel-tbody">
+
+      </tbody>
+
+    </table>
+    
+
+
+    <script src = "script.js"></script>
+</body>
+</html>

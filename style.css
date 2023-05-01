@@ -1,0 +1,52 @@
+.navbar{
+    background-color: rgb(14, 90, 65);
+    height: 50px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar ul{
+  margin: 0;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    color: #ffffff;
+    padding: 20px 10px 0px 10px;    
+}
+
+table{
+    border-collapse: collapse ;
+    width: auto;
+}
+th,td{
+    border: 1px solid rgb(220, 208, 208);
+}
+td:focus{
+    outline:none;
+}
+td{
+    width: 100px;
+}
+#home{
+    background-color: #ffffff;
+    color: rgb(14, 90, 65); 
+    padding-top: 5px;
+    padding-bottom: 11px;
+}
+.styling{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    align-items: center;
+}
+i,label,select{
+    margin: 0px 10px;
+}
+input[type="color"],input[type="file"]{
+    display: none;
+}
+#download,#upload{
+    font-size: 20px;
+}
